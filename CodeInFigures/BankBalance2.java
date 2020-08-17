@@ -3,9 +3,9 @@ public class BankBalance2
 {
    public static void main(String[] args)
    {
-      double balance;
       int response;
       int year = 1;
+      double balance;
       final double INT_RATE = 0.03;
       Scanner keyboard = new Scanner(System.in);
       System.out.print("Enter initial bank balance > ");
@@ -18,8 +18,7 @@ public class BankBalance2
          year = year + 1;
          System.out.println("\nDo you want to see the balance " +
             "at the end of another year?");
-         System.out.println("Enter 1 for yes");
-         System.out.print("   or any other number for no >> ");
+         System.out.println("Enter 1 for yes   or   any other number for no >> ");
          response = keyboard.nextInt();
       } while(response == 1);
    }
